@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+/*GLOBAL*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+    color: #2d3c49;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*HEADER*/
+
+.header-main,
+.hero,
+.portafolio {
+    width: 100%;
+}
+
+.divider {
+    margin: 25px 0;
+    height: 5px;
+    background-color: #7d97ad;
+    width: 100%;
+}
+
+.header-main {
+    padding: 15px 0 0 0;
+}
+
+.header-logo {
+    max-width: 65px;
+    max-height: 65px;
+    float: left;
+    margin-top: 10px;
+}
+
+.header-title {
+    float: right;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.header-title h1 {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.header-title p {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+/*HERO*/
+
+.hero {
+    margin: 0 0 35px 0;
+}
+
+/*PORTAFOLIO*/
+
+.portafolio {
+    text-align: center;
+}
+
+.portafolio h1 {
+    font-weight: 400;
+    font-size: 2.3em;
+    color: #7d97ad;
+}
+
+.portafolio h2 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+.box {
+    margin: 20px 0;
+}
+
+@media screen and (min-width:767px) {
+
+    body {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .portafolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portafolio h1 {
+        margin-bottom: 10px;
+        padding: 0 0 0 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .box {
+        margin: 0 10px 0 0;
+        width: calc((100% - 20px)/3);
+    }
+
+    .box:last-of-type {
+        margin-right: 0;
+    }
+}
